@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Produção</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicionando ícones do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <div class="menu-lateral">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-box-open"></i> Devoluções</a></li>
+            <li><a href="demandas.html"><i class="fa-solid fa-toolbox"></i> ADM</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="conteudo-principal">
+        <h1>Demandas Técnicas</h1>
+        <label for="status-filter">Filtrar por status:</label>
+        <select id="status-filter" onchange="filtrarStatus()">
+            <option value="">Todos</option>
+            <option value="Pendente">Pendente</option>
+            <option value="Em andamento">Em andamento</option>
+            <option value="Concluído">Concluído</option>
+        </select>
+        <div class="container">
+            
+            
+
+            <!-- Coluna ADM - Camila e Patrick -->
+            <div class="column" id="adm-camila-patrick">
+                <h2>ADM - Camila e Patrick</h2>
+                <button class="add-btn" onclick="adicionarCard('adm-camila-patrick', 'Nova Demanda ADM')">
+                    <i class="fas fa-plus"></i> Adicionar Demanda
+                </button>
+            </div>
+
+            
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

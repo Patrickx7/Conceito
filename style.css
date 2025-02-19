@@ -1,0 +1,175 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-lateral h2 {
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+    color: #ecf0f1;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-lateral ul li {
+    margin: 15px 0;
+}
+
+.menu-lateral ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #34495e;
+}
+
+.menu-lateral ul li a i {
+    margin-right: 10px;
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Filtro */
+#status-filter {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Container de Colunas */
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Colunas */
+.column {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.status-text {
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.status-pendente { background: #dc3545; }
+.status-andamento { background: #ffc107; color: black; }
+.status-concluido { background: #28a745; }
+
+/* Botões */
+.status-btn, .edit-btn, .add-btn, .delete-btn {
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.status-btn { background: #ffc107; color: black; }
+.status-btn:hover { background: #e0a800; }
+
+.edit-btn { background: #17a2b8; color: white; }
+.edit-btn:hover { background: #138496; }
+
+.add-btn {
+    display: block;
+    width: 10%;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+}
+
+.add-btn:hover { background: #0056b3; }
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover { background: #c82333; }
