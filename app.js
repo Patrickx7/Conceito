@@ -62,7 +62,7 @@ function excluirCard(button) {
     }
 }
 
-// Função para filtrar cards por status
+// Função para filtrar cards por statu
 function filtrarStatus() {
     const filtro = document.getElementById("status-filter").value;
     document.querySelectorAll(".card").forEach(card => {
